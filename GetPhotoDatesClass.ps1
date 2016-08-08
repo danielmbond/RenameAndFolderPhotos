@@ -11,7 +11,7 @@ if($PSVersionTable.PSVersion.Major -lt 5)
 
 class PhotoMove
 {
-	[string]$dateTimeRegex = '\b[0-9]{8}(?:-[0-9]{6})?\b' #match 00000000-000000
+	[string]$dateTimeRegex = '[0-9]{4}(0[1-9]|1[0-2])([1-2][0-9]|3[0-1])-(0[0-9]|1[0-9]|2[0-4])([0-6][0-9]){2}' #match 00000000-000000
 	[bool]$rename = $true
     [bool]$createFolders = $true
     [string]$destinationPath = $env:USERPROFILE + "\Pictures"
