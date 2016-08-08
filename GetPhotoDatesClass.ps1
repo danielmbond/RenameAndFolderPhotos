@@ -3,7 +3,7 @@
 
 if($PSVersionTable.PSVersion.Major -lt 5)
 {
-    Write-Host "Requires version 5 or higher."
+    Write-Host "Requires PowerShell version 5 or higher."
     start "https://www.microsoft.com/en-us/download/confirmation.aspx?id=50395"
     Start-Sleep 120
     break;
